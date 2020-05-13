@@ -121,7 +121,8 @@ logoff $session /server:$computer
 #	Remove-Item $UserFileLocation
 	$MainForm.Hide()
 	$Pivot = 1
-# $hostname = & hostname
+	New-Item $UserFileLocation -type file -Force | Out-Null
+	Add-Content $UserFileLocation $env:computername
 	DO
 	{
 		if (!($UserFileLocation | Test-Path))
