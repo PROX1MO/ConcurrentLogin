@@ -209,7 +209,7 @@ $MainForm.ShowIcon = $False
 $MainForm.ShowInTaskbar = $False
 $MainForm.StartPosition = 'CenterScreen'
 $MainForm.Text = $MainFormTitle
-$MainForm.TopMost = $False
+$MainForm.TopMost = $True
 $MainForm.add_Load($MainForm_Load)
 $MainForm.Add_Closing({$_.Cancel = $true})
 #
